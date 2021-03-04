@@ -10,8 +10,8 @@
     <div class="container-fluid pt-3 pb-5">
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <a class="navbar-brand" href="#">Project Explorer</a>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,20 +34,20 @@
                 </form>
             </div>
         </nav>
-        <div class="container mt-4">
-            <h4> Project 1</h4>
+        <div class="container mt-5">
+            <h3> Project 1</h3>
             <div class="container">
-                <div class="row bg-light mt-2">
-                    <div class="col-sm">
+                <div class="p-3 mt-3 mb-5 row bg-light text-dark row">
+                    <div class="col">
                         Created By:<br>Yori Olajide</li>
                     </div>
-                    <div class="col-sm">
-                        Date Created<br>27/02/2021</li>
+                    <div class="col">
+                        Date Created<br>04/03/2021</li>
                     </div>
-                    <div class="col-sm">
-                        Last Updated <br>27/02/2021</li>
+                    <div class="col">
+                        Last Updated <br>04/03/2021</li>
                     </div>
-                    <div class="col-sm">
+                    <div class="col">
                         <div class="d-flex justify-content-end">
                             <a href="viewproject.html" class="btn btn-primary btn-lg">View Project</a>
                         </div>
@@ -58,30 +58,35 @@
 
             <div class="row">
                 <div class="col">
-                    <h5 class="mt-3">Edit Project </h5>
+                    <h5>Edit Project </h5>
                     <hr>
                     <form>
 
-                        <label for="">Project name</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="Project 1" />
-                        <label for="abstract">Project Abstract:</label><br />
-                        <textarea name="message" class="form-control"
-                            placeholder="Project 1 is a very interesting project" cols="30" row="10"></textarea>
-                        <label for="authors" class="form-label">Author(s):</label><br />
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="Yori Olajide" /><br />
-                        <label>Tag(s):</label><br />
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="#web" /><br />
-                        <button class="btn btn-primary" type="submit">Save</button>
-                    </form>
+                        <form action="" name="editProject" class="form-group">
+                            <label for="name" class="form-label">Project Name</label><br><input type="text" name="name"
+                                class="form-control" placeholder="Project 1"> <br>
+
+                                
+
+                            <label for="abstract" class="form-label">Project Abstract:</label><br />   <textarea name="message" class="form-control"
+                                placeholder="Project 1 is a very interesting project" cols="30" row="10"></textarea>
+
+                            <label for="authors" class="form-label">Author(s):</label><br />
+                            <input type="text" class="form-control" placeholder="Yori Olajide" /><br />
+
+                            <label>Tag(s):</label><br />
+                            <input type="text" name="tags" class="form-control" placeholder="#web" /><br />
+
+                            <button class="btn btn-primary">Save</button>
+                        </form>
                 </div>
 
                 <div class="col">
-                    <h5 class="mt-3"> Manage Project files </h5>
+                    <h5> Manage Project files </h5>
                     <hr>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01">
-                        <label class="custom-file-label" for="inputGroupFile01">Click to open file
-                            browser</label><br><br>
+                        <label class="custom-file-label form-label" for="file-name"> Click to open file browser</label>
+                        <input multiple="" class="form-control" type="file" id="file-name" class="custom-file-input" name="projectFile"/> <br>
                     </div>
                     <div class="card">
                         <div class="card-header">
@@ -99,10 +104,7 @@
     </div>
 
 
-    <footer class="footer">
-
-        <span class="text-muted float-right">Project
-            Explorer &#169 2020 . Edconnect</span>
+    <footer class="bg-light text-right m-5 p-2"> Project  Explorer &#169 2021 <a href="http://edconnect.ng">.Edconnect</a>
     </footer>
     </div>
 </body>
