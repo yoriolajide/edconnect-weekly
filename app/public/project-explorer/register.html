@@ -4,32 +4,26 @@
 <body>
 
     <head>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a href="#" class="navbar-brand">Project Explorer</a>
-        <form class="form-inline">
-            <input name="searchForm" class="form-control mr-sm-2" type="search" placeholder="Search Projects"
-                aria-label="Search" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"> Search </button>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-muted">Submit</a>
-            </li>
+<body>
+    <div class="container-fluid pt-3 pb-5">
+      <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a href="index.html" class="navbar-brand">Project Explorer</a>
+        <form name="searchForm" action="search.html" method="GET" class="form-inline">
+          <input type="text" name="search" class="mr-sm-2 form-control" placeholder="Search Projects">
+          <button type="submit" class="btn btn-outline-light">Search</button>
         </form>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="register.html" class="nav-link">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a href="login.html" class="nav-link">Login</a>
-                </li>
-            </ul>
+        <div class="mr-auto navbar-nav">
+          <a href="createproject.html" class="nav-link">Submit</a>
         </div>
-
-    </nav>
+        <div class="navbar-nav">
+          <a href="register.html" class="nav-link">Sign up</a>
+          <a href="login.html" class="nav-link">Login</a>
+        </div>
+      </nav>
     <main>
 
         <form action="" class="main-form">
@@ -101,10 +95,9 @@
     <footer class="text-muted py-5">
         <div class="container">
             <div style="position:relative; left:1100px;
-            <p class=" mb-1">Project Explorer &copy; 2020-Edconnect
-                </p>
-            </div>
-    </footer>
+            <footer class="bg-light text-right m-5 p-2"> Project Explorer &#169 2021 <a
+                        href="http://edconnect.ng">.Edconnect</a>
+                </footer>
 </body>
 
 </html>
